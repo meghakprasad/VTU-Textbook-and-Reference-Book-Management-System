@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("https://free4kwallpapers.com/uploads/originals/2016/02/08/gradient-grey-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  padding: 40px 20px;
+  background: white;
+  border-radius: 10px;
+  width: 800px;
+  min-height: 500px;
+  box-shadow: 5px 5px 20px 0 rgba(214, 214, 214, 1);
+  overflow: hidden;
+}
+.form-container {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.form-container input {
+  display: block;
+  padding: 10px 17px;
+  margin: 6px 12px;
+  background: #f6f5f7;
+  border: none;
+  outline: none;
+}
+
+.form-sign-in,
+.form-sign-up {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.signin {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: 0.8s;
+}
+.signup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  transition: 0.8s;
+}
+
+.signup.show {
+  bottom: 0;
+}
+.signin.hide {
+  top: -100%;
+}
+
+.form-container h1 {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.form-container a {
+  margin: 10px;
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: gray;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 10px;
+  min-width: 100px;
+  border-radius: 20px;
+  color: white;
+  margin: 20px;
+  outline: none;
+  cursor: pointer;
+  background:linear-gradient( #a4a3a68c,#1c1c1d);
+}
+
+.btn-form {
+  border: none;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background:linear-gradient(#969697, #171717);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.overlay h1 {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.overlay span {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.overlay-panel {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.btn-overlay {
+  border: solid 1px white;
+}
+
+.overlay-signup {
+  top: 0;
+  transition: 0.8s;
+}
+.overlay-signin {
+  bottom: -100%;
+  transition: 0.8s;
+}
+
+.overlay-signin.show {
+  bottom: 0;
+}
+.overlay-signup.hide {
+  top: -100%;
+}
+img{
+  bottom: 1%;
+  right: 0%;
+  position: absolute;
+}
